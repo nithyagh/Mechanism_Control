@@ -32,7 +32,7 @@ public class Launch extends CommandBase {
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
-    _flywheel.controlFlywheel(Constants.JoystickAxis.YAxis);
+    _flywheel.controlFlywheel(_joystick.getRawAxis(Constants.JoystickAxis.YAxis));
 
     SmartDashboard.putNumber("Velocity: ", _flywheel.getVelocity());
   }

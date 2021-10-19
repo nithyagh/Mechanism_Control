@@ -18,6 +18,10 @@ public final class Constants {
         public static final int FlywheelPort = 14;
     }
 
+    public static final class JoystickPorts {
+        public static final int Zero = 0;
+    }
+
     public static final class JoystickAxis {
         public static final int YAxis = 1;
     }
